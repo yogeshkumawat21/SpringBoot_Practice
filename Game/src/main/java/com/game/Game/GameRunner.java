@@ -4,14 +4,17 @@ import allgames.*;
 
 
 public class GameRunner {
-   private Missu game;
-	public GameRunner(Missu game) {
+   private GamingConsole game;
+	public GameRunner(GamingConsole game) {
 		this.game=game;
 	}
 
 	public void run()
 	{
-		game.missu();
+		game.up();
+		game.down();
+		game.left();
+		game.right();
 	}
   
 }

@@ -1,10 +1,30 @@
 package allgames;
 
-public class Bye {
+import com.game.Game.GamingConsole;
 
-	public void bye()
-	{
-		System.out.println("bye game is initiated");
+public class Bye implements GamingConsole {
+
+	public void up() {
+		System.out.println("Bye up ");
+		
+	}
+
+	@Override
+	public void down() {
+		System.out.println("Bye down ");
+		
+	}
+
+	@Override
+	public void left() {
+		System.out.println("Bye left ");
+		
+	}
+
+	@Override
+	public void right() {
+		System.out.println("Bye right ");
+		
 	}
 }
 

@@ -1,8 +1,28 @@
 package allgames;
 
-public class Missu {
-   public void missu()
-   {
-	   System.out.println("Miss u game is initiated");
-   }
+import com.game.Game.GamingConsole;
+
+public class Missu implements GamingConsole {
+	public void up() {
+		System.out.println("Hello up ");
+		
+	}
+
+	@Override
+	public void down() {
+		System.out.println("Hello down ");
+		
+	}
+
+	@Override
+	public void left() {
+		System.out.println("Hello left ");
+		
+	}
+
+	@Override
+	public void right() {
+		System.out.println("Hello right ");
+		
+	}
 }
